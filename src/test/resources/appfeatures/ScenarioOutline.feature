@@ -1,6 +1,8 @@
 Feature: Signup functionality
-Scenario Outline: validating signup for multiple users
+Background:
 Given user is at signup page
+
+Scenario Outline: validating signup for multiple users
 When user enters "<name>" inside the form
 And user enters age as <age>
 And user confirms the "<gender>" by checkbox
