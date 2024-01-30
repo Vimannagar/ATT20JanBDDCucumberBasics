@@ -1,26 +1,26 @@
 package steps;
 
+import java.util.HashMap;
+
 public class Test {
 	
-	String firstname;
-	String lastname;
 	
-	
-	public  void setName(String fn , String ln)
-	{
-		System.out.println(fn+" "+ln);
-		
-		firstname = fn;
-		lastname = ln;
-	}
 	
 	public static void main(String[] args) {
 		
-		Test t = new Test();
 		
-		t.setName("Jacob", "Lawson");
+		HashMap<String, String> hm = new HashMap<String, String>();
+		
+		hm.put("Maharashtra", "Mumbai");
+		
+		hm.put("Punjab", "Chandigarh");
+		
+		hm.put("Haryana", "Chandigarh");
+		
+		
+		System.out.println(hm);
+		
 		
 		
 	}
-
 }
