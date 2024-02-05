@@ -7,6 +7,8 @@ public class OrderConfirmationSteps {
 	
 	PlaceOrder placeOrder;
 	
+	static String prdId;
+	
 	
 	public OrderConfirmationSteps(PlaceOrder placeOrder)
 	{
@@ -21,9 +23,22 @@ public class OrderConfirmationSteps {
 	@Then("Order should get confirmed")
 	public void order_should_get_confirmed() {
 		
-		String prdId = placeOrder.getProductId();
+		 prdId = placeOrder.getProductId();
 		
 	   System.out.println("Order get confirmed with the product id " + prdId);
+	}
+	
+	
+	@When("I placed the order")
+	public void placeOrder()
+	{
+		System.out.println("Placing the order");
+	}
+	
+	@Then("I should be able to validate the order status")
+	public void validateStatusWithProductID()
+	{
+		System.out.println("Product ID received in scenario 2 is "+prdId);
 	}
 
 }

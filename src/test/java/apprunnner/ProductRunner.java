@@ -9,7 +9,9 @@ import io.cucumber.testng.CucumberOptions;
 		
 		glue = {"steps"},
 		
-		publish = true
+		publish = true,
+		
+		dryRun = true
 		
 		)
 
