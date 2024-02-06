@@ -15,4 +15,4 @@ Scenario: Login to application
 Given I am at landing page
 When I click on signin button
 And I enter the username as ""
-And I enter the password with final signin
+And I enter the password as "" with final signin
