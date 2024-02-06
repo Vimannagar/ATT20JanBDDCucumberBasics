@@ -19,9 +19,6 @@ public class HomePageSteps {
 	  WebDriver driver = DriverFactory.getDriver();
 	
 	  driver.get("https://www.amazon.in/");
-	  
-	    
-	    
 	}
 
 	@Then("page title should have {string}")
