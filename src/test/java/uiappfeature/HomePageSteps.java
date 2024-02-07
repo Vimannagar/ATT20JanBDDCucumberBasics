@@ -14,11 +14,17 @@ public class HomePageSteps {
 	  HomePage homepage = new HomePage(DriverFactory.getDriver());
 	  
 	@Given("I am at landing page")
-	public void i_am_at_landing_page() {
+	public void i_am_at_landing_page() throws InterruptedException {
 	   
 	  WebDriver driver = DriverFactory.getDriver();
 	
 	  driver.get("https://www.amazon.in/");
+	  
+	  Thread.sleep(2000);
+	  
+	  driver.navigate().refresh();
+	  
+	  
 	}
 
 	@Then("page title should have {string}")
@@ -57,10 +63,13 @@ public class HomePageSteps {
 	public void i_enter_the_username_as(String username) {
 	   homepage.enteringUsername(username);
 	}
-
-	@When("I enter the password with final signin")
-	public void i_enter_the_password_with_final_signin(String pwd) {
-	  homepage.finalLogin(pwd);
+	
+	@When("I enter the password as {string} with final signin")
+	public void i_enter_the_password_as_with_final_signin(String pwd) {
+	    
+		homepage.finalLogin(pwd);
 	}
+
+	
 
 }
