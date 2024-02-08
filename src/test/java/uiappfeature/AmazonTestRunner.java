@@ -9,9 +9,9 @@ import io.cucumber.testng.CucumberOptions;
 		
 		glue = {"uiappfeature"},
 		
-		plugin = {"pretty"},
+		plugin = {"pretty", "html:target/amazontestreport/reports.html"},
 		
-		publish = true,
+		publish = true,	
 		
 		tags = "@regression"
 		
