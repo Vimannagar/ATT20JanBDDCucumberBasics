@@ -22,7 +22,20 @@ public class AppHooks {
 		
 		String browserName = pr.readPropData("browser");
 		
+	String mavenBrowser	= System.getProperty("clibrowser");
+	
+	String env	= System.getProperty("environment");
+	
+	System.out.println(env);
+	
+	System.out.println("Value from command prompt is "+mavenBrowser);
+		
 		DriverFactory df = new DriverFactory();
+		
+		if(mavenBrowser!=null)
+		{
+			browserName = mavenBrowser;
+		}
 
 		driver = df.initBrowser(browserName);
 
