@@ -5,15 +5,18 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
 		
-		features = {"src\\test\\resources\\uiappfeature\\Homepage.feature"},
+		features = {"src\\test\\resources\\uiappfeature"},
 		
 		glue = {"uiappfeature"},
 		
-		plugin = {"pretty", "html:target/amazontestreport/reports.html"},
+		plugin = {"pretty", "html:target/amazontestreport/reports.html",
+				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
 		
 		publish = true,	
 		
 		tags = "@regression"
+		
+		
 		
 		)
 

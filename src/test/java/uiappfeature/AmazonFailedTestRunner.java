@@ -5,7 +5,9 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
 		
-		features = {"src\\test\\resources\\uiappfeature\\Homepage.feature"},
+//		features = {"src\\test\\resources\\uiappfeature\\Homepage.feature"},
+	
+		features = {"@target/failedrun.txt"},
 		
 		glue = {"uiappfeature"},
 		
@@ -13,11 +15,10 @@ import io.cucumber.testng.CucumberOptions;
 				"pretty",
 				"html:target/amazontestreport/reports.html", 
 				"rerun:target/failedrun.txt"
+				
 		},
 		
-		publish = true,	
-		
-		tags = "@sanity or @regression"
+		publish = true
 		
 		)
 

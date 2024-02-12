@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Feb 09 21:34:18 IST 2024</td>
+<td>Started on:</td><td>Mon Feb 12 21:33:19 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>69 seconds (69486 ms)</td>
+<tr><td>Total time:</td><td>70 seconds (70753 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,15 +76,15 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='uiappfeature.AmazonFailedTestRunner.runScenario()'><b>runScenario</b><br>Test class: uiappfeature.AmazonFailedTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login to application", "Homepage functionality"</td>
-<td><div><pre>org.openqa.selenium.ElementNotInteractableException: Element &lt;a class=&quot;nav-action-signin-button&quot; href=&quot;https://www.amazon.in/ap/signin?openid.pape.max_auth_age=0&amp;openid.return_to=https%3A%2F%2Fwww.amazon.in%2F%3Fref_%3Dnav_signin&amp;openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.assoc_handle=inflex&amp;openid.mode=checkid_setup&amp;openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&quot;&gt; could not be scrolled into view
+<td title='uiappfeature.AmazonTestRunner.runScenario()'><b>runScenario</b><br>Test class: uiappfeature.AmazonTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login to application", "Homepage functionality"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //*[@id=&apos;nav-flyout-ya-signin&apos;]//a[@class=&apos;nav-action-signin-button&apos;]
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [fb16c263-504a-46fa-920b-6f6509684110, clickElement {id=302b0469-d67d-4cdb-9166-de1698fb54ff}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 121.0.1, moz:accessibilityChecks: false, moz:buildID: 20240108143603, moz:debuggerAddress: 127.0.0.1:32352, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 13980, moz:profile: C:\Users\DELL\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:32352/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Element: [[FirefoxDriver: firefox on windows (fb16c263-504a-46fa-920b-6f6509684110)] -&gt; xpath: //*[@id=&apos;nav-flyout-ya-signin&apos;]//a[@class=&apos;nav-action-signin-button&apos;]]
-Session ID: fb16c263-504a-46fa-920b-6f6509684110
+Command: [e77a53d4-64ca-4824-bdb5-ea0240084f7f, findElement {using=xpath, value=//*[@id=&apos;nav-flyout-ya-signin&apos;]//a[@class=&apos;nav-action-signin-button&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 121.0.1, moz:accessibilityChecks: false, moz:buildID: 20240108143603, moz:debuggerAddress: 127.0.0.1:9182, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 9076, moz:profile: C:\Users\DELL\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:9182/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e77a53d4-64ca-4824-bdb5-ea0240084f7f
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -97,26 +97,25 @@ Session ID: fb16c263-504a-46fa-920b-6f6509684110
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy28.click(Unknown Source)
 	at pages.HomePage.goToSignIn(HomePage.java:82)
 	at uiappfeature.HomePageSteps.i_click_on_signin_button(HomePageSteps.java:58)
 	at ?.I click on signin button(file:///F:/Desktop/VimanNagar/May%2021/ATT20JanEveningBDDBasics/src/test/resources/uiappfeature/Homepage.feature:20)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1850477964", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1850477964'><pre>org.openqa.selenium.ElementNotInteractableException: Element &lt;a class=&quot;nav-action-signin-button&quot; href=&quot;https://www.amazon.in/ap/signin?openid.pape.max_auth_age=0&amp;openid.return_to=https%3A%2F%2Fwww.amazon.in%2F%3Fref_%3Dnav_signin&amp;openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.assoc_handle=inflex&amp;openid.mode=checkid_setup&amp;openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&quot;&gt; could not be scrolled into view
+</pre></div><a href='#' onClick='toggleBox("stack-trace2125594830", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2125594830'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //*[@id=&apos;nav-flyout-ya-signin&apos;]//a[@class=&apos;nav-action-signin-button&apos;]
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [fb16c263-504a-46fa-920b-6f6509684110, clickElement {id=302b0469-d67d-4cdb-9166-de1698fb54ff}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 121.0.1, moz:accessibilityChecks: false, moz:buildID: 20240108143603, moz:debuggerAddress: 127.0.0.1:32352, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 13980, moz:profile: C:\Users\DELL\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:32352/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Element: [[FirefoxDriver: firefox on windows (fb16c263-504a-46fa-920b-6f6509684110)] -&gt; xpath: //*[@id=&apos;nav-flyout-ya-signin&apos;]//a[@class=&apos;nav-action-signin-button&apos;]]
-Session ID: fb16c263-504a-46fa-920b-6f6509684110
+Command: [e77a53d4-64ca-4824-bdb5-ea0240084f7f, findElement {using=xpath, value=//*[@id=&apos;nav-flyout-ya-signin&apos;]//a[@class=&apos;nav-action-signin-button&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 121.0.1, moz:accessibilityChecks: false, moz:buildID: 20240108143603, moz:debuggerAddress: 127.0.0.1:9182, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 9076, moz:profile: C:\Users\DELL\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:9182/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e77a53d4-64ca-4824-bdb5-ea0240084f7f
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -129,20 +128,19 @@ Session ID: fb16c263-504a-46fa-920b-6f6509684110
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy28.click(Unknown Source)
 	at pages.HomePage.goToSignIn(HomePage.java:82)
 	at uiappfeature.HomePageSteps.i_click_on_signin_button(HomePageSteps.java:58)
 	at ?.I click on signin button(file:///F:/Desktop/VimanNagar/May%2021/ATT20JanEveningBDDBasics/src/test/resources/uiappfeature/Homepage.feature:20)
 </pre></div></td>
-<td>24</td>
-<td>uiappfeature.AmazonFailedTestRunner@18df8434</td></tr>
+<td>31</td>
+<td>uiappfeature.AmazonTestRunner@793f29ff</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -153,15 +151,10 @@ Session ID: fb16c263-504a-46fa-920b-6f6509684110
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='uiappfeature.AmazonFailedTestRunner.runScenario()'><b>runScenario</b><br>Test class: uiappfeature.AmazonFailedTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate title of page", "Homepage functionality"</td>
+<td title='uiappfeature.AmazonTestRunner.runScenario()'><b>runScenario</b><br>Test class: uiappfeature.AmazonTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify search product functionality", "Search product"</td>
 <td></td>
-<td>22</td>
-<td>uiappfeature.AmazonFailedTestRunner@18df8434</td></tr>
-<tr>
-<td title='uiappfeature.AmazonFailedTestRunner.runScenario()'><b>runScenario</b><br>Test class: uiappfeature.AmazonFailedTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "verify cart icon", "Homepage functionality"</td>
-<td></td>
-<td>17</td>
-<td>uiappfeature.AmazonFailedTestRunner@18df8434</td></tr>
+<td>26</td>
+<td>uiappfeature.AmazonTestRunner@793f29ff</td></tr>
 </table><p>
 </body>
 </html>
