@@ -1,10 +1,10 @@
 Feature: Homepage functionality
-@sanity
+@regression
 Scenario: Validate title of page
 Given I am at landing page
 Then page title should have "Shopping"
 
-@sanity
+@regression
 Scenario: verify cart icon
 Given I am at landing page
 Then cart icon should get display
@@ -14,7 +14,7 @@ Scenario: checkout deals section
 Given I am at landing page
 When I see the daily needs then I click on it
 
-@regression
+@sanity
 Scenario: Login to application
 Given I am at landing page
 When I click on signin button
