@@ -57,7 +57,7 @@ public class AppHooks {
 			
 			TakesScreenshot ts = (TakesScreenshot)driver;
 			
-			byte[] source = ts.getScreenshotAs(OutputType.BYTES);
+			 byte[] source = ts.getScreenshotAs(OutputType.BYTES);
 			
 			scenario.attach(source, "image/png", nameOfScenario);
 		}

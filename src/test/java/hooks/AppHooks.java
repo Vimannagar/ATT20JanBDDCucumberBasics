@@ -81,6 +81,7 @@ public class AppHooks {
 	public void afterHook()
 	{
 		System.out.println("After hook");
+		
 	}
 	
 	

@@ -2,30 +2,46 @@
 <testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-12T21:33:19 IST" name="Default suite" finished-at="2024-02-12T21:34:30 IST" duration-ms="70753">
+  <suite started-at="2024-07-25T19:04:02 IST" name="Suite" finished-at="2024-07-25T19:04:35 IST" duration-ms="32460">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:uiappfeature.AmazonTestRunner@793f29ff]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-02-12T21:33:19 IST" name="Default test" finished-at="2024-02-12T21:34:30 IST" duration-ms="70753">
+    <test started-at="2024-07-25T19:04:02 IST" name="Test" finished-at="2024-07-25T19:04:35 IST" duration-ms="32460">
       <class name="uiappfeature.AmazonTestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:uiappfeature.AmazonTestRunner@793f29ff]" started-at="2024-02-12T21:33:19 IST" name="setUpClass" finished-at="2024-02-12T21:33:22 IST" duration-ms="3243" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:uiappfeature.AmazonTestRunner@793f29ff]" started-at="2024-07-25T19:04:02 IST" name="setUpClass" finished-at="2024-07-25T19:04:04 IST" duration-ms="2178" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@1805ec96]]>
+                <![CDATA[org.testng.TestRunner@50b4364]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:uiappfeature.AmazonTestRunner@793f29ff]" started-at="2024-02-12T21:33:22 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-12T21:33:53 IST" duration-ms="31229" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:uiappfeature.AmazonTestRunner@793f29ff]" started-at="2024-07-25T19:04:05 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-07-25T19:04:15 IST" duration-ms="10673" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Login to application"]]>
+                <![CDATA["Validate title of page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Homepage functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:uiappfeature.AmazonTestRunner@793f29ff]" started-at="2024-07-25T19:04:15 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-07-25T19:04:26 IST" duration-ms="10890" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["verify cart icon"]]>
               </value>
             </param>
             <param index="1">
@@ -36,24 +52,26 @@
           </params>
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Unable to locate element: //*[@id='nav-flyout-ya-signin']//a[@class='nav-action-signin-button']
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='nav-cart123']"}
+  (Session info: chrome=126.0.6478.127)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.17.0', revision: 'e52b1be057*'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [e77a53d4-64ca-4824-bdb5-ea0240084f7f, findElement {using=xpath, value=//*[@id='nav-flyout-ya-signin']//a[@class='nav-action-signin-button']}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 121.0.1, moz:accessibilityChecks: false, moz:buildID: 20240108143603, moz:debuggerAddress: 127.0.0.1:9182, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 9076, moz:profile: C:\Users\DELL\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:9182/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: e77a53d4-64ca-4824-bdb5-ea0240084f7f]]>
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f39d09670c819fd9a54b326c71095930, findElement {using=xpath, value=//*[@id='nav-cart123']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61294}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61294/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f39d09670c819fd9a54b326c71095930]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //*[@id='nav-flyout-ya-signin']//a[@class='nav-action-signin-button']
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='nav-cart123']"}
+  (Session info: chrome=126.0.6478.127)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.17.0', revision: 'e52b1be057*'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [e77a53d4-64ca-4824-bdb5-ea0240084f7f, findElement {using=xpath, value=//*[@id='nav-flyout-ya-signin']//a[@class='nav-action-signin-button']}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 121.0.1, moz:accessibilityChecks: false, moz:buildID: 20240108143603, moz:debuggerAddress: 127.0.0.1:9182, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 9076, moz:profile: C:\Users\DELL\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:9182/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: e77a53d4-64ca-4824-bdb5-ea0240084f7f
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f39d09670c819fd9a54b326c71095930, findElement {using=xpath, value=//*[@id='nav-cart123']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61294}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61294/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f39d09670c819fd9a54b326c71095930
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -72,37 +90,21 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy28.click(Unknown Source)
-at pages.HomePage.goToSignIn(HomePage.java:82)
-at uiappfeature.HomePageSteps.i_click_on_signin_button(HomePageSteps.java:58)
-at ✽.I click on signin button(file:///F:/Desktop/VimanNagar/May%2021/ATT20JanEveningBDDBasics/src/test/resources/uiappfeature/Homepage.feature:20)
+at jdk.proxy2/jdk.proxy2.$Proxy28.isDisplayed(Unknown Source)
+at pages.HomePage.ifCartIconDisplayed(HomePage.java:65)
+at uiappfeature.HomePageSteps.cart_icon_should_get_display(HomePageSteps.java:45)
+at ✽.cart icon should get display(file:///F:/Desktop/VimanNagar/May%2021/ATT20JanEveningBDDBasics/src/test/resources/uiappfeature/Homepage.feature:10)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:uiappfeature.AmazonTestRunner@793f29ff]" started-at="2024-02-12T21:33:54 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-02-12T21:34:20 IST" duration-ms="26553" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["verify search product functionality"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Search product"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:uiappfeature.AmazonTestRunner@793f29ff]" started-at="2024-02-12T21:34:20 IST" name="tearDownClass" finished-at="2024-02-12T21:34:30 IST" duration-ms="9542" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:uiappfeature.AmazonTestRunner@793f29ff]" started-at="2024-07-25T19:04:26 IST" name="tearDownClass" finished-at="2024-07-25T19:04:35 IST" duration-ms="8570" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- uiappfeature.AmazonTestRunner -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

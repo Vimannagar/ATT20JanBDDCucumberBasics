@@ -16,12 +16,12 @@ public class HomePage {
 	WebDriver driver;
 	WebDriverWait wait;
 
-	@FindBy(xpath = "//*[@id='nav-cart']")
+	@FindBy(xpath = "//*[@id='nav-cart123']")
 	private WebElement cart_icon;
 
 	@FindAll(
 			{
-	@FindBy(xpath = "//li[@class='a-carousel-card']//img[@alt='Daily essentials']"),
+	@FindBy(xpath = "//*[@class='a-carousel-card']//a[@aria-label='Grocery']"),
 	
 	@FindBy(xpath = "//li[@class='a-carousel-card']//img[@alt='Super Value days']")
 				}
@@ -45,6 +45,9 @@ public class HomePage {
 
 	@FindBy(xpath = "//input[@id='signInSubmit123']")
 	private WebElement finalSignIn;
+	
+	@FindBy(xpath = "//*[@id='nav-subnav']//*[normalize-space(text())='Grocery & Gourmet Foods']")
+	private WebElement health;
 
 	public HomePage(WebDriver driver) {
 		this.driver = driver;
@@ -70,6 +73,9 @@ public class HomePage {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 
 		js.executeScript("arguments[0].click();", dailyneedsCarousel);
+		
+		wait.until(ExpectedConditions.visibilityOf(health));
+	System.out.println(health.isDisplayed());	
 
 //		dailyneedsCarousel.click();
 	}
