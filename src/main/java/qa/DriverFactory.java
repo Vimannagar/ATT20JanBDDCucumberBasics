@@ -19,7 +19,7 @@ public class DriverFactory {
 		{
 		capabilities = new ChromeOptions();
 		}
-		else if(browserName.equals("Firefox"))
+		else if(browserName.equals("firefox"))
 		{
 			capabilities = new FirefoxOptions();
 		}
