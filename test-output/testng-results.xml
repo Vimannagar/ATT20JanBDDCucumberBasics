@@ -1,27 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2024-07-25T19:04:02 IST" name="Suite" finished-at="2024-07-25T19:04:35 IST" duration-ms="32460">
+=======
+  <suite started-at="2024-07-17T19:53:19 IST" name="Default suite" finished-at="2024-07-17T19:54:48 IST" duration-ms="88714">
+>>>>>>> branch 'master' of https://github.com/Vimannagar/ATT20JanBDDCucumberBasics.git
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:uiappfeature.AmazonTestRunner@793f29ff]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:uiappfeature.AmazonTestRunner@3d285d7e]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
+<<<<<<< HEAD
     <test started-at="2024-07-25T19:04:02 IST" name="Test" finished-at="2024-07-25T19:04:35 IST" duration-ms="32460">
+=======
+    <test started-at="2024-07-17T19:53:19 IST" name="Default test" finished-at="2024-07-17T19:54:48 IST" duration-ms="88714">
+>>>>>>> branch 'master' of https://github.com/Vimannagar/ATT20JanBDDCucumberBasics.git
       <class name="uiappfeature.AmazonTestRunner">
+<<<<<<< HEAD
         <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:uiappfeature.AmazonTestRunner@793f29ff]" started-at="2024-07-25T19:04:02 IST" name="setUpClass" finished-at="2024-07-25T19:04:04 IST" duration-ms="2178" status="PASS">
+=======
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:uiappfeature.AmazonTestRunner@3d285d7e]" started-at="2024-07-17T19:53:19 IST" name="setUpClass" finished-at="2024-07-17T19:53:21 IST" duration-ms="1074" status="PASS">
+>>>>>>> branch 'master' of https://github.com/Vimannagar/ATT20JanBDDCucumberBasics.git
           <params>
             <param index="0">
               <value>
+<<<<<<< HEAD
                 <![CDATA[org.testng.TestRunner@50b4364]]>
+=======
+                <![CDATA[org.testng.TestRunner@6fbe4800]]>
+>>>>>>> branch 'master' of https://github.com/Vimannagar/ATT20JanBDDCucumberBasics.git
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
+<<<<<<< HEAD
         <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:uiappfeature.AmazonTestRunner@793f29ff]" started-at="2024-07-25T19:04:05 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-07-25T19:04:15 IST" duration-ms="10673" status="PASS">
+=======
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:uiappfeature.AmazonTestRunner@3d285d7e]" started-at="2024-07-17T19:53:21 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-07-17T19:53:31 IST" duration-ms="10730" status="FAIL">
+>>>>>>> branch 'master' of https://github.com/Vimannagar/ATT20JanBDDCucumberBasics.git
           <params>
             <param index="0">
               <value>
@@ -52,26 +72,123 @@
           </params>
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
+<<<<<<< HEAD
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='nav-cart123']"}
+=======
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='ap_email']"}
+>>>>>>> branch 'master' of https://github.com/Vimannagar/ATT20JanBDDCucumberBasics.git
   (Session info: chrome=126.0.6478.127)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.17.0', revision: 'e52b1be057*'
+<<<<<<< HEAD
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Command: [f39d09670c819fd9a54b326c71095930, findElement {using=xpath, value=//*[@id='nav-cart123']}]
 Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61294}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61294/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
 Session ID: f39d09670c819fd9a54b326c71095930]]>
+=======
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cdda426a25da077e6ba37707e3e84178, findElement {value=//*[@id='ap_email'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62112}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62112/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cdda426a25da077e6ba37707e3e84178]]>
+>>>>>>> branch 'master' of https://github.com/Vimannagar/ATT20JanBDDCucumberBasics.git
             </message>
             <full-stacktrace>
+<<<<<<< HEAD
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='nav-cart123']"}
+=======
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='ap_email']"}
+>>>>>>> branch 'master' of https://github.com/Vimannagar/ATT20JanBDDCucumberBasics.git
   (Session info: chrome=126.0.6478.127)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.17.0', revision: 'e52b1be057*'
+<<<<<<< HEAD
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Command: [f39d09670c819fd9a54b326c71095930, findElement {using=xpath, value=//*[@id='nav-cart123']}]
 Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61294}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61294/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
 Session ID: f39d09670c819fd9a54b326c71095930
+=======
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cdda426a25da077e6ba37707e3e84178, findElement {value=//*[@id='ap_email'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62112}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62112/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cdda426a25da077e6ba37707e3e84178
+>>>>>>> branch 'master' of https://github.com/Vimannagar/ATT20JanBDDCucumberBasics.git
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+<<<<<<< HEAD
+at jdk.proxy2/jdk.proxy2.$Proxy28.isDisplayed(Unknown Source)
+at pages.HomePage.ifCartIconDisplayed(HomePage.java:65)
+at uiappfeature.HomePageSteps.cart_icon_should_get_display(HomePageSteps.java:45)
+at ✽.cart icon should get display(file:///F:/Desktop/VimanNagar/May%2021/ATT20JanEveningBDDBasics/src/test/resources/uiappfeature/Homepage.feature:10)
+=======
+at jdk.proxy2/jdk.proxy2.$Proxy28.sendKeys(Unknown Source)
+at pages.HomePage.enteringUsername(HomePage.java:87)
+at uiappfeature.HomePageSteps.i_enter_the_username_as(HomePageSteps.java:64)
+at ✽.I enter the username as "8176867662"(file:///C:/ATT/Install/repoSonu/ATT20JanBDDCucumberBasics/src/test/resources/uiappfeature/Homepage.feature:21)
+>>>>>>> branch 'master' of https://github.com/Vimannagar/ATT20JanBDDCucumberBasics.git
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+<<<<<<< HEAD
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:uiappfeature.AmazonTestRunner@793f29ff]" started-at="2024-07-25T19:04:26 IST" name="tearDownClass" finished-at="2024-07-25T19:04:35 IST" duration-ms="8570" status="PASS">
+=======
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:uiappfeature.AmazonTestRunner@3d285d7e]" started-at="2024-07-17T19:53:31 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-07-17T19:54:41 IST" duration-ms="70077" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["verify search product functionality"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Search product"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(),'Samsung Galaxy M14 5G')]/parent::a"}
+  (Session info: chrome=126.0.6478.127)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a49d67c282349a1a551f60c7bfaafdc9, findElement {value=//*[contains(text(),'Samsung Galaxy M14 5G')]/parent::a, using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62235}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62235/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a49d67c282349a1a551f60c7bfaafdc9]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(),'Samsung Galaxy M14 5G')]/parent::a"}
+  (Session info: chrome=126.0.6478.127)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a49d67c282349a1a551f60c7bfaafdc9, findElement {value=//*[contains(text(),'Samsung Galaxy M14 5G')]/parent::a, using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62235}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62235/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a49d67c282349a1a551f60c7bfaafdc9
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -91,16 +208,17 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 at jdk.proxy2/jdk.proxy2.$Proxy28.isDisplayed(Unknown Source)
-at pages.HomePage.ifCartIconDisplayed(HomePage.java:65)
-at uiappfeature.HomePageSteps.cart_icon_should_get_display(HomePageSteps.java:45)
-at ✽.cart icon should get display(file:///F:/Desktop/VimanNagar/May%2021/ATT20JanEveningBDDBasics/src/test/resources/uiappfeature/Homepage.feature:10)
+at pages.SearchProduct.getProductInfo(SearchProduct.java:45)
+at uiappfeature.SearchProductSteps.i_should_get_results(SearchProductSteps.java:22)
+at ✽.I should get results(file:///C:/ATT/Install/repoSonu/ATT20JanBDDCucumberBasics/src/test/resources/uiappfeature/SearchProduct.feature:6)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:uiappfeature.AmazonTestRunner@793f29ff]" started-at="2024-07-25T19:04:26 IST" name="tearDownClass" finished-at="2024-07-25T19:04:35 IST" duration-ms="8570" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:uiappfeature.AmazonTestRunner@3d285d7e]" started-at="2024-07-17T19:54:41 IST" name="tearDownClass" finished-at="2024-07-17T19:54:48 IST" duration-ms="6754" status="PASS">
+>>>>>>> branch 'master' of https://github.com/Vimannagar/ATT20JanBDDCucumberBasics.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
