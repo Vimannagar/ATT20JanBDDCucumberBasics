@@ -14,7 +14,7 @@ import io.cucumber.testng.CucumberOptions;
 		
 		publish = true,	
 		
-		tags = "@sanity"
+		tags = "@regression"
 		
 		
 		

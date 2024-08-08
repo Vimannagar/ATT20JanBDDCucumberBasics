@@ -1,5 +1,5 @@
 Feature: Homepage functionality
-@regression
+@functional
 Scenario: Validate title of page
 Given I am at landing page
 Then page title should have "Shopping"

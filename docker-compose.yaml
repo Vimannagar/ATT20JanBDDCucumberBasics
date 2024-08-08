@@ -25,11 +25,20 @@ services:
       - SE_EVENT_BUS_PUBLISH_PORT=4442
       - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
 
-  cucumber-testcases:
+  cucumber-testcases-chrome:
     image: cucumbertestcaseimage:latest
     depends_on:
       - hub
     environment:
       - browser=Chrome
     volumes:
-      - ./chrometestsreports:/home/seleniumcucumbertestframework/target    
+      - ./chrometestsreports:/home/seleniumcucumbertestframework/target
+
+  cucumber-testcases-firefox:
+    image: cucumbertestcaseimage:latest
+    depends_on:
+      - hub
+    environment:
+      - browser=firefox
+    volumes:
+      - ./firefoxtestsreports:/home/seleniumcucumbertestframework/target        
