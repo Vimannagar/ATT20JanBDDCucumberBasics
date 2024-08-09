@@ -15,12 +15,19 @@ pipeline {
                     }
                 }
 
-                stage('Running scenarios on chrome') {
-                    steps {
-                         bat "docker-compose up cucumber-testcases-chrome"               
-                    }
+stage('Running testcases'){
 
-                         post { 
+    parallel{
+ stage('Running on Chrome browser') {
+
+
+    steps{
+
+        bat "docker-compose up cucumber-tests-chrome"
+    }
+    
+    post
+        {
         always { 
             emailext attachLog: true, attachmentsPattern: 'chrometestsreports/amazontestreport/reports.html', body: '''<h1>This is customized email report</h1>
 <p>Hi Team,<br>
@@ -34,17 +41,17 @@ Thanks  & Regards<br>
 ATT 20 Jan Batch</p>
 ''', subject: '$PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS! - Customized email for Chrome Browser', to: 'attevening@gmail.com'
         }
+        }
     }
-                
+stage('Running testcases on firefox'){
 
-                }
+    steps{
 
-                   stage('Running scenarios on firefox') {
-                    steps {
-                         bat "docker-compose up cucumber-testcases-firefox"               
-                    }
-
-                         post { 
+        bat "docker-compose up cucumber-tests-firefox"
+    }
+    
+    post
+        {
         always { 
             emailext attachLog: true, attachmentsPattern: 'firefoxtestsreports/amazontestreport/reports.html', body: '''<h1>This is customized email report</h1>
 <p>Hi Team,<br>
@@ -58,10 +65,11 @@ Thanks  & Regards<br>
 ATT 20 Jan Batch</p>
 ''', subject: '$PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS! - Customized email for Firefox Browser', to: 'attevening@gmail.com'
         }
-    }
-                
+        }
+}
+}
+}
 
-                }
 
 
 
